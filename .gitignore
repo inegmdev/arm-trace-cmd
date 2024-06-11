@@ -1,0 +1,5 @@
+__OUT/Build
+__OUT/bin
+*.a
+*.so
+*.so.*
