@@ -1,0 +1,13 @@
+diff --git a/src/event-parse-local.h b/src/event-parse-local.h
+index c6bfc61..72c9691 100644
+--- a/src/event-parse-local.h
++++ b/src/event-parse-local.h
+@@ -15,7 +15,7 @@ struct event_handler;
+ struct func_resolver;
+ struct tep_plugins_dir;
+ 
+-#define __hidden __attribute__((visibility ("hidden")))
++#define __hidden __attribute__((weak, visibility ("hidden")))
+ 
+ struct tep_handle {
+ 	int ref_count;

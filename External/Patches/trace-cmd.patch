@@ -1,0 +1,12 @@
+diff --git a/Makefile b/Makefile
+index 74d8d926..c79c0100 100644
+--- a/Makefile
++++ b/Makefile
+@@ -288,6 +288,7 @@ INCLUDES += -I$(src)/lib/trace-cmd/include/private
+ INCLUDES += -I$(src)/tracecmd/include
+ INCLUDES += $(LIBTRACEEVENT_CFLAGS)
+ INCLUDES += $(LIBTRACEFS_CFLAGS)
++INCLUDES += $(USER_INCLUDES)
+ 
+ include $(src)/features.mk
+ 
